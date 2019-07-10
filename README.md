@@ -81,4 +81,3 @@ As a student, I want to be able to:
 
 - Syncing to cloud, being able to access from different devices (live update?) 
 - Collaborating, being able to share and send notes, as well as being able to work on same note at the same time
-
