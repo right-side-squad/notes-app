@@ -28,10 +28,19 @@ h3 {
     padding: 0.5em;
 }
 
-.pages-list li {
-    display: grid;
-    grid-template-rows: 4em 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.pages {
+    grid-row-start: 2; 
+    grid-row-end: 6;
+    border: 0.2em black solid;
     padding: 0.5em;
+
+}
+
+.pages-list li{
+    display: grid;
+    grid-template-rows: 4em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0.5em;
+
 }
 
 .topbar {
@@ -43,14 +52,17 @@ h3 {
     padding: 0.5em;
 }
 
-.search-bar {
+/* .search-bar {
     text-align: right;
+} */
+
+.icon {
+    height: 2vh; 
+    width: 1.5vw;
 }
 
-.pages {
-    grid-row-start: 2; 
-    grid-row-end: 6;
-    border: 0.2em black solid;
+.topbar-list li{
+    display: inline-block;
 }
 
 .interface {
@@ -59,4 +71,16 @@ h3 {
     grid-row-start: 2; 
     grid-row-end: 6;
     border: 0.2em black solid;
+}
+
+.sort-by {
+    height: 2vh; 
+    width: 4vw;
+}
+
+
+.sort-heading div {
+    display: inline;
+    grid: none;
+    padding: 0.5em;
 }
