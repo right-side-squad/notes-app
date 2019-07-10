@@ -1,86 +1,19 @@
-.interface-body {
-    padding: 0.5em;
-    height:100%;
+body {
+  margin: 40px;
 }
 
-h3 {
-    text-align: center;
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
 }
 
-.mainface {
-  display: grid; 
-  grid-template-columns: 17em  17em 1fr; 
-  grid-template-rows: 3em  1fr 1fr; 
-  height:100%;
-  width: 100%;
-}
-
-.notebook {
-    grid-row-start: 1; 
-    grid-row-end: 5;
-    border: 0.2em black solid;
-    height: 100%
-}
-
-.notebook-list li {
-    display: grid;
-    grid-template-rows: 4em 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 0.5em;
-}
-
-.pages {
-    grid-row-start: 2; 
-    grid-row-end: 6;
-    border: 0.2em black solid;
-    padding: 0.5em;
-
-}
-
-.pages-list li{
-    display: grid;
-    grid-template-rows: 4em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 0.5em;
-
-}
-
-.topbar {
-    grid-column-start: 2; 
-    grid-column-end: 4;
-    border: 0.2em black solid;
-    grid-row-start: 1; 
-    grid-row-end: 2;
-    padding: 0.5em;
-}
-
-/* .search-bar {
-    text-align: right;
-} */
-
-.icon {
-    height: 2vh; 
-    width: 1.5vw;
-}
-
-.topbar-list li{
-    display: inline-block;
-}
-
-.interface {
-    grid-column-start: 3; 
-    grid-column-end: 4;
-    grid-row-start: 2; 
-    grid-row-end: 6;
-    border: 0.2em black solid;
-}
-
-.sort-by {
-    height: 2vh; 
-    width: 4vw;
-}
-
-
-.sort-heading div {
-    display: inline;
-    grid: none;
-    padding: 0.5em;
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
 }
