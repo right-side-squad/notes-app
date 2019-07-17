@@ -1,85 +1,143 @@
-.interface-body {
-    padding: 0.5em;
+
+
+ .interface-body {
+    background-color: #E4E4E4; 
     height:100%;
-}
+    width: 100%;    
+} 
 
-h3 {
-    text-align: center;
-}
-
-.mainface {
-  display: grid; 
-  grid-template-columns: 17em  17em 1fr; 
-  grid-template-rows: 3em  1fr 1fr; 
-  height:100%;
-  width: 100%;
-}
-
-.notebook {
-    grid-row-start: 1; 
-    grid-row-end: 5;
-    border: 0.2em black solid;
-    height: 100%
-}
-
-.notebook-list li {
+.top-header {
+    background-color: #FFD374; 
     display: grid;
-    grid-template-rows: 4em 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 0.5em;
+    grid-template-columns: 60% 10% 10% 20%;
+    padding: 1em;
 }
 
-.pages {
-    grid-row-start: 2; 
-    grid-row-end: 6;
-    border: 0.2em black solid;
-    padding: 0.5em;
+.logo {
+    padding-left: 0.5em;
+}
+
+.help {
+    padding-top: 11.7em;
+}
+
+.contact-us {
+    padding-top: 11.7em;
 
 }
 
-.pages-list li{
-    display: grid;
-    grid-template-rows: 4em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 0.5em;
-
-}
-
-.topbar {
-    grid-column-start: 2; 
-    grid-column-end: 4;
-    border: 0.2em black solid;
-    grid-row-start: 1; 
-    grid-row-end: 2;
-    padding: 0.5em;
-}
-
-/* .search-bar {
+.help a{
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 25px;
+    text-decoration: none;
     text-align: right;
-} */
+}
+
+.contact-us a{
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 25px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.search-bar {
+    padding-top: 10.7em;
+    padding-left: 2em; 
+}
+
+.search-rounded {
+    height: 48px;
+    border-radius: 4px;
+    width: 451px;
+}
+
+::placeholder {
+    color: #355C7D;
+    font-size: 25px;
+    font-family: "Noto Serif" "Times New Roman";
+    padding: 0.5em;
+    opacity: 0.4;
+  }
+
+.welcome-bar {
+    padding: 3em 7em 1em 7em ;
+    border-bottom: 6px solid #5179A2;
+}
+
+.welcome-header {
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 46px;
+}
+.course {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+}
+
+.selection {
+    height: 71px;
+    border-radius: 4px;
+    width: 569px;
+    padding-left: 0.5em;
+}
+
+.main-content {
+    background-color: #E4E4E4;
+}
+
+.course-option {
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 30px;
+}
+
+.main-body {
+    padding: 3em 7em 1em 7em;
+    height: 100%;
+
+}
+
+.course-lists {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    border-bottom: 6px solid #5179A2;
+}
+
+.coursebtn {
+    height: 88px;
+    border-radius: 4px;
+    width: 267px;
+    border: 2px #707070 solid; 
+    background-color: #FFFFFF;
+    font-size: 37px;
+    border-bottom: none;
+}
+
+.quick-lists {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 1em;   
+    grid-gap: 4em;
+    border: none; 
+    background-color: none;
+    border-bottom: none;
+    border: 2px #707070 solid; 
+    height: 100%;
+}
 
 .icon {
-    height: 2vh; 
-    width: 1.5vw;
+    height: 150px;
+    width: 140px;
 }
 
-.topbar-list li{
-    display: inline-block;
+.qckbtn {
+    border-radius: 4px;
+} 
+
+.bottom-bar {
+    background-color: #F2E2CE; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
 }
 
-.interface {
-    grid-column-start: 3; 
-    grid-column-end: 4;
-    grid-row-start: 2; 
-    grid-row-end: 6;
-    border: 0.2em black solid;
-}
-
-.sort-by {
-    object-position: right;
-}
-
-
-.sort-heading div {
-    display: inline;
-    grid: none;
-    padding: 0.5em;
-}
