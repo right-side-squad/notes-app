@@ -40,6 +40,10 @@
     text-align: right;
 }
 
+.hide {
+    display: none; 
+}
+
 .search-bar {
     padding-top: 10.7em;
     padding-left: 2em; 
@@ -73,6 +77,14 @@
     grid-template-columns: 1fr 1fr; 
 }
 
+
+
+h2 {
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 30px;
+    padding: 0.5em 0 0.5em 0.5em; 
+}
+
 .selection {
     height: 71px;
     border-radius: 4px;
@@ -86,7 +98,7 @@
 
 .course-option {
     font-family: "Noto Serif" "Times New Roman";
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .main-body {
@@ -100,6 +112,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 4px;
     border-bottom: 6px solid #5179A2;
+    justify-items: center;
+    margin: auto;
 }
 
 .coursebtn {
@@ -112,21 +126,43 @@
     border-bottom: none;
 }
 
+.focus { 
+    background-color: #5179A2;
+}
+
+
 .quick-lists {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
     padding: 1em;   
     grid-gap: 4em;
-    border: none; 
     background-color: none;
-    border-bottom: none;
+    justify-items: center;
+    margin: 0;
+}
+
+.content {
     border: 2px #707070 solid; 
     height: 100%;
 }
 
-.icon {
+.folder {
     height: 150px;
     width: 140px;
+}
+
+.imgBtn {
+    background-color: #E4E4E4; 
+    border: none; 
+    text-align: center;
+    margin: 0;
+
+}
+
+.crsList {
+    text-align: center;
+    margin: 0;
 }
 
 .qckbtn {
@@ -141,3 +177,151 @@
     height: 50px;
 }
 
+#semesterHead1 {
+    border-bottom: 2px #707070 solid; 
+}
+
+#semesterHead2 {
+    border-bottom: 2px #707070 solid; 
+}
+
+/* Newnote page */
+
+.top-header-1 {
+    background-color: #FFD374; 
+    display: grid;
+    grid-template-columns: 60% 10% 10% 20%;
+    padding: 1em;
+    height: 7em; 
+    width: 100%;
+}
+
+.logo-1 {
+    padding-left: 0.5em;
+    height: 7vh; 
+    width: 10vw;
+}
+
+.help-1 {
+    padding-top: 3.5em;
+}
+
+.contact-us-1 {
+    padding-top: 3.5em;
+
+}
+
+.help-1 a{
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 25px;
+    text-decoration: none;
+    text-align: right;
+    color: #434343; 
+}
+
+.contact-us-1 a{
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 25px;
+    text-decoration: none;
+    text-align: right;
+    color: #434343; 
+}
+
+.search-bar-1 {
+    padding-top: 2em;
+    padding-left: 2em; 
+}
+
+.newpage-bar {
+    padding: 1em 0 1em 0;    
+    border-bottom: 6px solid #5179A2; 
+}
+
+.menu-bar {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-gap: 5px;
+    padding:  0 1.5em 0 1.5em;
+    align-items: center;
+    margin: 0;
+}
+
+.menu-icon {
+    height: 2vh;
+    width: 2vw;
+    justify-content: center;
+    margin:auto;
+}
+
+.newpage {
+    min-width: 1000px; 
+    min-height: 2000px; 
+    background-color: white; 
+}
+
+/* login window css */
+
+.login-window {
+    height: 39vh; 
+    width: 35vw;
+    justify-content: center;
+    margin: 12em auto;
+    /* background-color: #F7F7F7; */
+
+}
+
+.login-forum {
+    text-align: center;
+    background-color: #F7F7F7;
+    border: 0.1em solid #707070;
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 30px;
+    padding: 0.5em 0 0.5em 0.5em; 
+}
+
+.login-title {
+    border: 0.1em solid #707070;
+    background-color: #E4E4E4;
+}
+
+.login-line {
+    width: 25vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.login-btn {
+    margin: 1em ;
+    padding: 5px 32px;
+    background-color: #FFD374;
+    border: #FFD374;
+}
+
+.rem-pass {
+    display: block;
+    padding-top: none;
+    margin-top: none;
+}
+
+.remember-me {
+    text-decoration: none;
+    display: inline;
+    color: black;
+    text-align: right; 
+}
+
+
+.password-line {
+    text-decoration: none;
+    display: inline;
+    color: black;
+    text-align: right; 
+    margin-left: 5em;
+}
+
+.lessons {
+    text-decoration: none;
+    font-family: "Noto Serif" "Times New Roman";
+    font-size: 28px;
+    color: black;
+}
