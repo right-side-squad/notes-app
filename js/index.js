@@ -11,7 +11,7 @@
 
 //          {semester1:"Semester 1",
 
-//                courses: [
+//                ourses: 
 
 //                     {course1: "3D Visualization",
 
@@ -31,8 +31,7 @@
 //                             week13: "lesson 13", 
 //                             week14: "lesson 14",}]},
 
-//                     {course2: "2D Visualization",
-                        
+//                     {course2: "2D Visualization",                    
 //                         weeks: [  
 //                             {week1:"lesson 1", 
 //                             week2: "lesson 2", 
@@ -125,7 +124,7 @@
 
 //          {semester2:"Semester 2",
 
-//             courses: [
+//             ourses: 
 
 //                 {course1: "3D Visualization II",
 
@@ -145,8 +144,7 @@
 //                         week13: "lesson 13", 
 //                         week14: "lesson 14",}]},
 
-//                 {course2: "2D Visualization II",
-                    
+//                 {course2: "2D Visualization II",                
 //                     weeks: [  
 //                         {week1:"lesson 1", 
 //                         week2: "lesson 2", 
@@ -245,8 +243,8 @@
 //         {semester3:"Semester3",
 
 //             courses: [
-                
-//                 {course1: "Semiotics",
+              
+//                {course1: "Semiotics",
 
 //                     weeks: [  
 //                         {week1:"lesson 1", 
@@ -300,8 +298,7 @@
 //                         week13: "lesson 13", 
 //                         week14: "lesson 14",}]},
                 
-//                 {course4: "Design History",
-                   
+//                 {course4: "Design History",               
 //                     weeks: [  
 //                         {week1:"lesson 1", 
 //                         week2: "lesson 2", 
@@ -318,8 +315,7 @@
 //                         week13: "lesson 13", 
 //                         week14: "lesson 14",}]},
 
-//                 {course5: "3D Visualization III",
-                    
+//                 {course5: "3D Visualization III",                
 //                     weeks: [  
 //                         {week1:"lesson 1", 
 //                         week2: "lesson 2", 
@@ -336,8 +332,7 @@
 //                         week13: "lesson 13", 
 //                         week14: "lesson 14",}]},
 
-//                 {course6: "Interactive Video",
-                   
+//                 {course6: "Interactive Video",               
 //                     weeks: [  
 //                         {week1:"lesson 1", 
 //                         week2: "lesson 2", 
@@ -358,8 +353,8 @@
 //         {semester4:"Semester 4",
 
 //         courses: [
-                
-//             {course1: "Semiotics II",
+              
+//            {course1: "Semiotics II",
 
 //                 weeks: [  
 //                     {week1:"lesson 1", 
@@ -413,8 +408,7 @@
 //                     week13: "lesson 13", 
 //                     week14: "lesson 14",}]},
             
-//             {course4: "Design History II",
-               
+//             {course4: "Design History II",           
 //                 weeks: [  
 //                     {week1:"lesson 1", 
 //                     week2: "lesson 2", 
@@ -431,8 +425,7 @@
 //                     week13: "lesson 13", 
 //                     week14: "lesson 14",}]},
 
-//             {course5: "Ergonomics",
-                
+//             {course5: "Ergonomics",            
 //                 weeks: [  
 //                     {week1:"lesson 1", 
 //                     week2: "lesson 2", 
@@ -449,8 +442,7 @@
 //                     week13: "lesson 13", 
 //                     week14: "lesson 14",}]},
 
-//             {course6: "Interactive Video II",
-               
+//             {course6: "Interactive Video II",           
 //                 weeks: [  
 //                     {week1:"lesson 1", 
 //                     week2: "lesson 2", 
@@ -475,7 +467,7 @@
 
 //         {semester5:"Semester 5",
 
-//             courses: [
+//             ourses: 
 
 //             {course1: "Portfolio I",
 
@@ -513,8 +505,7 @@
 //                     week13: "lesson 13", 
 //                     week14: "lesson 14",}]},
 
-//             {course3: "Interactive Systems",
-            
+//             {course3: "Interactive Systems",        
 //                 weeks: [
 //                     {week1:"lesson 1", 
 //                     week2: "lesson 2", 
@@ -589,7 +580,7 @@
 
 //         {semester6:"Semester 6", 
 
-//             courses: [
+//             ourses: 
 
 //             {course1: "Portgolio II",
 
@@ -716,81 +707,50 @@ const pass1 = "Sandagdorj";
 // const user1Name = [ user1  pass1];
 
 
-const semesters = [
-    {semester: "Semester 1"}, 
-    {semester:"Semester 2"},
-    {semester:"Semester 3"},
-    {semester:"Semester 4"},
-    {semester:"Semester 5"},
-    {semester:"Semester 6"},
-]
+const years = [
+    {
+        year: "Year One",
+        semesters: [
+            {semester: "Semester 1", 
+                courses: ["3D Visualization", "2D Visualization","Visual Design","Design History","Technical Drawing","Technical Systems",],
+                    weeks: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6",]},
+            {semester:"Semester 2",
+                courses: ["3D Visualization II","2D Visualization II","Visual Design II","Design History II","Technical Drawing II","Technical Systems II",],
+                    weeks: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6",]},
 
-const courses = [
-    {course: "3D Visualization"},
-    {course: "2D Visualization"},
-    {course: "Visual Design"},
-    {course: "Design History"},
-    {course: "Technical Drawing"}, 
-    {course: "Technical Systems",},
+        ]
+    },    {
+        year: "Year Two",
+        semesters: [
+            {semester: "Semester 3", 
+                courses: ["Semiotics","Social Networks","Sequential Arts","Design History","3D Visualization III","Interactive Video",],
+                    weeks: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6",]},
 
-    {course:"3D Visualization II"},
-    {course: "2D Visualization II"},
-    {course: "Visual Design II"},
-    {course: "Design History II"},
-    {course: "Technical Drawing II"},
-    {course: "Technical Systems II",},
-    
-    {course: "Semiotics"},
-    {course: "Social Networks"},
-    {course: "Sequential Arts"},
-    {course: "Design History"},
-    {course: "3D Visualization III"},
-    {course: "Interactive Video"}, 
-    
-    {course: "Semiotics II"},
-    {course: "Social Networks II"},
-    {course: "Sequential Arts II"},
-    {course: "Design History II"},
-    {course: "Ergonomics"},
-    {course: "Interactive Video II"},
+            {semester:"Semester 4", 
+                courses: ["Semiotics II","Social Networks II","Sequential Arts II","Design History II","Ergonomics","Interactive Video II",],
+                    weeks: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6",]},
 
-    {course: "Portfolio I"},
-    {course: "Device Development"},
-    {course: "Interactive Systems"}, 
-    {course: "Augmented Reality"}, 
-    {course: "Human-Computer Interaction"}, 
-    {course: "Digital Publishing"},
+        ]
+    },  {
+        year: "Year three",
+        semesters: [
+            {semester: "Semester 5", 
+                courses: ["Portfolio I","Device Development","Interactive Systems","Augmented Reality","Human-Computer Interaction","Digital Publishing",],
+                    weeks: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6",]},
 
-    {course: "Portgolio II"},
-    {course: "Device Development II"},
-    {course: "Interactive Systems II"}, 
-    {course: "Augmented Reality II"}, 
-    {course: "Ergonomics"}, 
-    {course: "Digital Publishing II"},
-]
+            {semester:"Semester 6", 
+                courses: ["Portgolio II","Device Development II","Interactive Systems II","Augmented Reality II","Ergonomics","Digital Publishing II",],
+                    weeks: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6",]},
 
-
-const weeks = [
-    {week:"lesson 1"}, 
-    {week: "lesson 3"}, 
-    {week: "lesson 4"}, 
-    {week: "lesson 5"}, 
-    {week: "lesson 6"}, 
-    {week:"lesson 7"}, 
-    {week: "lesson 8"}, 
-    {week: "lesson 9"}, 
-    {week: "lesson 10"}, 
-    {week: "lesson 11"}, 
-    {week: "lesson 12"},
-    {week: "lesson 13"}, 
-    {week: "lesson 14"},
+        ]
+    }, 
 ]
 
 /*****************************************************************
         DATA Storage 
 ****************************************************************/
 
-const btnFirst = document.getElementById(`btnFirst`);
+//const btnFirst = document.getElementById(`btnFirst`);
 const btnSecond = document.getElementById(`btnSecond`);
 const btnThird = document.getElementById(`btnThird`);
 const semHead1 = document.getElementById(`semesterHead1`);
@@ -837,132 +797,99 @@ const checkUserIsLoggedIn = (u) => {
   
   });
 
-  /*****************************************************************
-       Btn format 
-****************************************************************/
-
-let buttons = Array.prototype.slice.call(document.querySelectorAll(".coursebtn"));
-
-buttons.forEach(function(btn){
-
-  btn.addEventListener("click", function(){
-    buttons.forEach(function(btn){ btn.classList.remove("focus"); });
-    this.classList.add("focus"); 
-  });
-  
-});
-
 
 /*****************************************************************
         format 
 ****************************************************************/
 
-
-const lesssonFormat= (lessons) => {
+const lessonFormat= (lessons) => {
     
     return `
-    <ul class= "quick-lists">
-        <li>
-        <button class="imgBtn"><img src="Icon Pack\png\folder.png" alt="newpage" class="folder"></button>
-        <div class="lessons"><a href="newnote.html">${lessons.week}</a></div>
-        </li>
-    </ul>`
-
+    <li>
+        <button class="imgBtn"><img src="Icon Pack\png\new.png" alt="newpage" class="folder"></button>
+        <div class="lessons"><a href="newnote.html">${lessons}</a></div>
+    </li>`
 }
 
 const courseFormat= (crs) => {
     
     return `
-    <ul>
-        <li>
-        <button class="imgBtn"><img src="Icon Pack/png/folder.png" alt="newpage" class="folder"></button>
-        <div><a href="newnote.html" class="lessons">${crs.course}</a></div>
-        </li>
-    </ul>`
+    <li>
+        <button class="crsBtn" id="wkbtn"><img src="Icon Pack/png/folder.png" alt="newpage" class="folder"></button>
+        <div><a href="newnote.html" class="lessons">${crs}</a></div>
+    </li>`
 
 }
 
-const semesterFormat= (sems) => {
-    
-    return `<h2>${sems.semester}</h2>`
-
+const getYearTab = (yr, id) => {
+    return `<li><button class="coursebtn" data-id="${id}" >${yr.year}</button></li>`;
 }
 
+const getSemesterSection = (sem) => {
 
- /*****************************************************************
-       Show ALl Format
-****************************************************************/
-const showAllcourses =(ary) => {
-    document.getElementById(`quickLists1`).innerHTML = ary.map(courseformat).join(``);
+    const courses = sem.courses.map(courseFormat).join('')
+
+    return `
+    <section class="content"> 
+        <h2 class="semHead">${sem.semester}</h2>
+        <ul class= "quick-lists">
+            ${courses}
+        </ul>
+    </section> `;
 }
+
+const getWeekSection = (wks) => {
+
+    const weeks = wks.weeks.map(lessonFormat).join('')
+
+    return `
+    <section class="content"> 
+        <h2 class="semHead">${wks.courses}</h2>
+        <ul class= "quick-lists">
+            ${weeks}
+        </ul>
+    </section> `;
+}
+
 
 /*****************************************************************
         Print First Year 
 ****************************************************************/
+const printAllYears = (yrs) => {
+    // Print all the tabs
+    document.getElementById('year-list').innerHTML = yrs.map(getYearTab).join('');
 
-const getFirstCoursestoHTML = () => {
+    document.getElementById('year-list').addEventListener('click', event => {
+        if (!event.target.matches(`.coursebtn`)) return;
 
-    document.getElementById(`quickLists1`).innerHTML = courses.map(courseFormat).slice(0,6).join(``)
+        const yearId = parseInt(event.target.dataset.id);
+        printOneYearsCourses(yrs[yearId]);
+    });
+    // Print the first semester
+    printOneYearsCourses(yrs[0]);
 
-    document.getElementById(`quickLists2`).innerHTML = courses.map(courseFormat).slice(6,12).join(``)
+}    
 
+const printOneYearsCourses = (yr) => {
+    document.getElementById('semesters').innerHTML = yr.semesters.map(getSemesterSection).join('')
 }
 
-const getFirstSemesterstoHTML = () => {
-
-    semHead1.innerHTML = semesters.map(semesterFormat).slice(0,1).join(``)
-    semHead2.innerHTML = semesters.map(semesterFormat).slice(1,2).join(``)
-
+const printOneCourseWeeks = (wk) => {
+    document.getElementById('weekly').innerHTML = wk.weeks.map(getWeekSection).join('')
 }
 
+printAllYears(years);
 
-window.addEventListener(`load`, getFirstCoursestoHTML);
-window.addEventListener(`load`, getFirstSemesterstoHTML);
+document.getElementById(`wkbtn`).addEventListener(`click`, printOneYearsCourses(0))
 
-
-btnFirst.addEventListener (`click`, getFirstCoursestoHTML); 
-btnFirst.addEventListener (`click`, getFirstSemesterstoHTML); 
 
 /*****************************************************************
         Print Second Year 
 ****************************************************************/
-const getSecondCoursestoHTML = () => {
 
-    document.getElementById(`quickLists1`).innerHTML = courses.map(courseFormat).slice(12,18).join(``)
-
-    document.getElementById(`quickLists2`).innerHTML = courses.map(courseFormat).slice(18,24).join(``)
-
-}
-
-const getSecondSemesterstoHTML = () => {
-
-    semHead1.innerHTML = semesters.map(semesterFormat).slice(2,3).join(``)
-    semHead2.innerHTML = semesters.map(semesterFormat).slice(3,4).join(``)
-
-}
-
-btnSecond.addEventListener (`click`, getSecondCoursestoHTML); 
-btnSecond.addEventListener (`click`, getSecondSemesterstoHTML); 
 /*****************************************************************
         Print Third Year 
 ****************************************************************/
-const getThirdCoursestoHTML = () => {
-
-    document.getElementById(`quickLists1`).innerHTML = courses.map(courseFormat).slice(24,30).join(``)
-
-    document.getElementById(`quickLists2`).innerHTML = courses.map(courseFormat).slice(30,36).join(``)
-
-}
-
-const getThirdSemesterstoHTML = () => {
-
-    semHead1.innerHTML = semesters.map(semesterFormat).slice(4,5).join(``)
-    semHead2.innerHTML = semesters.map(semesterFormat).slice(5,6).join(``)
-
-}
-
-btnThird.addEventListener (`click`, getThirdCoursestoHTML); 
-btnThird.addEventListener (`click`, getThirdSemesterstoHTML); 
 
 
 /*****************************************************************
@@ -971,7 +898,6 @@ btnThird.addEventListener (`click`, getThirdSemesterstoHTML);
 
 const searchBar = (query) => {
     showAllcourses(courses.filter( prod => prod.shop.toLowerCase().includes( query.toLowerCase() ) ) );
-
   }
 
     document.getElementById(`search`).addEventListener(`key up`, (event) => {
@@ -985,18 +911,6 @@ const searchBar = (query) => {
 /*****************************************************************
         School Year
 ****************************************************************/
-
-// const formatYears = (schoolYear) => {
-
-    // return `
-    // <li class="product-pic">
-    //     <div class = "product"><a href="product-page.html"><img src="img/${product.photo}"></a></div>
-    //     <div class="product-des"><a href="product-page.html">${product.shop}</a></div>
-    //     <div class="price"> Room: ${product.rooms}</div>
-    //     <div class="price"> Style: ${product.style}</div>
-    //     <div class="price"> Colour: ${product.colour}</div>
-    //     <div class="price">${outOfStock}</div>
-    // </li>`; 
 
     
 /*****************************************************************

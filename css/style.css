@@ -130,7 +130,6 @@ h2 {
     background-color: #5179A2;
 }
 
-
 .quick-lists {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -160,6 +159,13 @@ h2 {
 
 }
 
+.crsBtn {
+        background-color: #E4E4E4; 
+        border: none; 
+        text-align: center;
+        margin: 0;
+}
+
 .crsList {
     text-align: center;
     margin: 0;
@@ -177,13 +183,10 @@ h2 {
     height: 50px;
 }
 
-#semesterHead1 {
+.semHead {
     border-bottom: 2px #707070 solid; 
 }
 
-#semesterHead2 {
-    border-bottom: 2px #707070 solid; 
-}
 
 /* Newnote page */
 
