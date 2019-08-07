@@ -866,21 +866,37 @@ const printAllYears = (yrs) => {
         printOneYearsCourses(yrs[yearId]);
     });
     // Print the first semester
-    printOneYearsCourses(yrs[0]);
 
 }    
+
 
 const printOneYearsCourses = (yr) => {
     document.getElementById('semesters').innerHTML = yr.semesters.map(getSemesterSection).join('')
 }
 
-const printOneCourseWeeks = (wk) => {
-    document.getElementById('weekly').innerHTML = wk.weeks.map(getWeekSection).join('')
-}
+// The following did not work - Ask Rocco 
+
+// printOneYearsCourses(yrs[0]);
+
+// const printAllWeeks = (allwks) => {
+
+//     document.getElementById('').addEventListener('click', event => {
+//     if (!event.target.matches(`.crsBtn`)) return;
+// });
+
+// printOneCourseWeeks(allwks[0]);
+
+// }    
+
+
+
+// const printOneCourseWeeks = (wk) => {
+//     document.getElementById('weekly').innerHTML = wk.courses.map(getWeekSection).join('')
+// }
 
 printAllYears(years);
 
-document.getElementById(`wkbtn`).addEventListener(`click`, printOneYearsCourses(0))
+
 
 
 /*****************************************************************
@@ -895,6 +911,18 @@ document.getElementById(`wkbtn`).addEventListener(`click`, printOneYearsCourses(
 /*****************************************************************
         Search
 ****************************************************************/
+
+const searchBar = (query) => {
+    showAllcourses(courses.filter( prod => prod.shop.toLowerCase().includes( query.toLowerCase() ) ) );
+  }
+
+    document.getElementById(`search`).addEventListener(`key up`, (event) => {
+    event.preventDefault();
+    let q = document.getElementById(`search`).query.value;
+         
+    searchBar(q);
+
+});
 
 /*****************************************************************
         School Year
