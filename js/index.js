@@ -896,18 +896,6 @@ document.getElementById(`wkbtn`).addEventListener(`click`, printOneYearsCourses(
         Search
 ****************************************************************/
 
-const searchBar = (query) => {
-    showAllcourses(courses.filter( prod => prod.shop.toLowerCase().includes( query.toLowerCase() ) ) );
-  }
-
-    document.getElementById(`search`).addEventListener(`key up`, (event) => {
-    event.preventDefault();
-    let q = document.getElementById(`search`).query.value;
-         
-    searchBar(q);
-
-});
-
 /*****************************************************************
         School Year
 ****************************************************************/
