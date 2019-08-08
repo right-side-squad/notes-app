@@ -73,6 +73,7 @@ const checkUserIsLoggedIn = (u) => {
       $showWindow.classList.add('hide');
     }
     return u;
+    
   }
   
   
@@ -134,18 +135,18 @@ const getSemesterSection = (sem) => {
     </section> `;
 }
 
-const getWeekSection = (wks) => {
+// const getWeekSection = (wks) => {
 
-    const weeks = wks.weeks.map(lessonFormat).join('')
+//     const weeks = wks.weeks.map(lessonFormat).join('')
 
-    return `
-    <section class="content"> 
-        <h2 class="semHead">${wks.courses}</h2>
-        <ul class= "quick-lists">
-            ${weeks}
-        </ul>
-    </section> `;
-}
+//     return `
+//     <section class="content"> 
+//         <h2 class="semHead">${wks.courses}</h2>
+//         <ul class= "quick-lists">
+//             ${weeks}
+//         </ul>
+//     </section> `;
+// }
 
 
 /*****************************************************************
@@ -162,17 +163,18 @@ const printAllYears = (yrs) => {
         printOneYearsCourses(yrs[yearId]);
     });
     // Print the first semester
-
+    printOneYearsCourses(yrs[0]);
 }    
-
 
 const printOneYearsCourses = (yr) => {
     document.getElementById('semesters').innerHTML = yr.semesters.map(getSemesterSection).join('')
 }
 
+printAllYears(years);
+
 // The following did not work - Ask Rocco 
 
-// printOneYearsCourses(yrs[0]);
+
 
 // const printAllWeeks = (allwks) => {
 
@@ -190,7 +192,6 @@ const printOneYearsCourses = (yr) => {
 //     document.getElementById('weekly').innerHTML = wk.courses.map(getWeekSection).join('')
 // }
 
-printAllYears(years);
 
 
 
@@ -206,19 +207,20 @@ printAllYears(years);
 
 /*****************************************************************
         Search
-****************************************************************/
+        ****************************************************************/
+//not working due to login forum - ask Rocco
 
-const searchBar = (query) => {
-    showAllcourses(courses.filter( prod => prod.shop.toLowerCase().includes( query.toLowerCase() ) ) );
-  }
+// const searchBar = (query) => {
+//     printAllYears(courses.filter( prod => prod.shop.toLowerCase().includes( query.toLowerCase() ) ) );
+//   }
 
-    document.getElementById(`search`).addEventListener(`key up`, (event) => {
-    event.preventDefault();
-    let q = document.getElementById(`search`).query.value;
+//     document.getElementById(`search`).addEventListener(`key up`, (event) => {
+//     event.preventDefault();
+//     let q = document.getElementById(`search`).query.value;
          
-    searchBar(q);
+//     searchBar(q);
 
-});
+// });
 
 /*****************************************************************
         School Year
